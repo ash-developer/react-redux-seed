@@ -9,7 +9,8 @@
   "author": "ash <ash.developer@yandex.ru>",
   "dependencies": {
     "react": "0.14.7",
-    "react-dom": "0.14.7"
+    "react-dom": "0.14.7",
+    "react-router": "2.0.0"
   },
   "devDependencies": {
     "babel-core": "6.5.2",
