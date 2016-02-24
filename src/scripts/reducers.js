@@ -1,9 +1,11 @@
+import * as actionTypes from './actions/types';
+
 const reducers = (state = {}, action) => {
 
   switch (action.type) {
-    case 'ACTION1':
-      return {action: 1};
-    case 'ACTION2':
+    case actionTypes.ACTION1_TYPE:
+      return {action: action.value || 1};
+    case actionTypes.ACTION2_TYPE:
       return {action: 2};
     default:
       return state

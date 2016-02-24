@@ -15,12 +15,16 @@ function mapDispatchToProps(dispatch) {
 @connect(mapStateToProps, mapDispatchToProps)
 class About extends Component {
 
+  handleAction1Click = () => {
+    this.props.actions.action1(123);
+  };
+
   render() {
     return (
       <div>
         <h1>About</h1>
         <h3>current action value -> {this.props.action}</h3>
-        <p onClick={this.props.actions.action1}>action 1</p>
+        <p onClick={this.handleAction1Click}>action 1</p>
         <p onClick={this.props.actions.action2}>action 2</p>
       </div>
     );

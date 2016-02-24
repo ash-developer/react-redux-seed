@@ -1,11 +1,14 @@
-export const action1 = () => {
+import * as actionTypes from './actions/types';
+
+export const action1 = value => {
   return {
-    type: 'ACTION1'
+    type: actionTypes.ACTION1_TYPE,
+    value: value
   }
 };
 
 export const action2 = () => {
   return {
-    type: 'ACTION2'
+    type: actionTypes.ACTION2_TYPE
   }
 };
