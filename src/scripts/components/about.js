@@ -6,8 +6,8 @@ import * as actions from '../actions/common';
 
 @connect(
   state => ({
-    action: state.common.action,
-    other: state.other.action
+    action: state.common.get('action'),
+    other: state.other.get('action')
   }),
   dispatch => ({ actions: bindActionCreators(actions, dispatch) })
 )

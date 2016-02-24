@@ -12,6 +12,7 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
+    "immutable": "3.7.6",
     "react": "0.14.7",
     "react-dom": "0.14.7",
     "react-redux": "4.4.0",
