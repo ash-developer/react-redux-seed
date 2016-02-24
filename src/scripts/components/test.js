@@ -2,23 +2,23 @@ import React from 'react';
 
 class Test extends React.Component {
 
-    static propTypes = {
-        test: React.PropTypes.string.isRequired,
-        onChange: React.PropTypes.func
-    };
+  static propTypes = {
+    test: React.PropTypes.string.isRequired,
+    onChange: React.PropTypes.func
+  };
 
-    render() {
-        return (
-            <div>
-                <h1>Hello World! {this.props.test}</h1>
-                <input
-                    type="text"
-                    value={this.props.test}
-                    onChange={this.props.onChange}
-                />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1>Hello World! {this.props.test}</h1>
+        <input
+          type="text"
+          value={this.props.test}
+          onChange={this.props.onChange}
+        />
+      </div>
+    );
+  }
 
 }
 
