@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/types';
-import Immutable from 'immutable';
+import { Map } from 'immutable';
 
-const common = (state = Immutable.Map({}), action) => {
+const common = (state = Map({}), action) => {
 
   switch (action.type) {
     case actionTypes.ACTION1_TYPE:
