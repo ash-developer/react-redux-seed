@@ -16,7 +16,7 @@ function mapDispatchToProps(dispatch) {
 class About extends Component {
 
   handleAction1Click = () => {
-    this.props.actions.action1(123);
+    this.props.actions.actionAsync();
   };
 
   render() {

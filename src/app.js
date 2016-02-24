@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import thunkMiddleware from 'redux-thunk'
 import { Provider } from 'react-redux';
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 
 import './styles/style.less';
 import reducers from './scripts/reducers'
@@ -11,7 +12,7 @@ import Home from './scripts/components/home';
 import About from './scripts/components/about';
 import NoMatch from './scripts/components/no-match';
 
-let store = createStore(reducers);
+let store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
 ReactDOM.render (
   <Provider store={store}>

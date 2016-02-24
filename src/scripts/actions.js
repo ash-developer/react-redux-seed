@@ -12,3 +12,15 @@ export const action2 = () => {
     type: actionTypes.ACTION2_TYPE
   }
 };
+
+export const actionAsync = () => {
+
+  return (dispatch) => {
+    dispatch(action1(9));
+
+    setTimeout(() => {
+      dispatch(action1(-1));
+    }, 5000);
+  };
+
+};
