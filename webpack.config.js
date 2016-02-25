@@ -17,7 +17,7 @@ module.exports = {
     loaders: [
       {test: /\.less$/, loader: 'style!css!less'},
       {test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
-      {test: /\.jpg$/, loader: 'file'}
+      {test: /\.jpg$/, loader: 'file?name=assets/[hash].[ext]'}
     ]
   },
   plugins: [
