@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Component } from 'react';
 import * as actions from '../actions/common';
 
 @connect(
@@ -9,7 +8,9 @@ import * as actions from '../actions/common';
     action: state.common.get('action'),
     other: state.other.get('action')
   }),
-  dispatch => ({ actions: bindActionCreators(actions, dispatch) })
+  dispatch => ({
+    actions: bindActionCreators(actions, dispatch)
+  })
 )
 class About extends Component {
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-class NoMatch extends React.Component {
+class NoMatch extends Component {
 
   render() {
     return (

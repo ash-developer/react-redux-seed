@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-class Test extends React.Component {
+class Test extends Component {
 
   static propTypes = {
     test: React.PropTypes.string.isRequired,

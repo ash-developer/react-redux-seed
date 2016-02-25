@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import { Link } from 'react-router'
 
-class App extends React.Component {
+class App extends Component {
 
   render() {
     return (

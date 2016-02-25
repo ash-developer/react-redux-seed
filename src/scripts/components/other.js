@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import Test from './test';
 
-class Other extends React.Component {
+class Other extends Component {
 
   static propTypes = {
     initial: React.PropTypes.string
