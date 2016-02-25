@@ -10,7 +10,6 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "app.js"
   },
-
   module: {
     loaders: [
       {test: /\.less$/, loader: ExtractTextPlugin.extract('style', 'css!less')},
@@ -18,7 +17,9 @@ module.exports = {
       {test: /\.(jpg|eot)$/, loader: 'file?name=assets/[hash].[ext]'}
     ]
   },
-
+  externals: {
+    'jquery': 'jQuery'
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: __dirname + '/src/index.html'

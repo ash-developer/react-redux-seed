@@ -1,15 +1,13 @@
 import * as actionTypes from '../actions/types';
 import { Map } from 'immutable';
 
-const common = (state = Map({}), action) => {
+let reducers = {};
 
-  switch (action.type) {
-    case actionTypes.ACTION1_TYPE:
-      return state.set('action', action.value || 1);
-    default:
-      return state
-  }
-
+reducers[actionTypes.ACTION1_TYPE] = (state, action) => {
+  return state.set('action', action.value || 1);
 };
 
-export default common;
+export default (state = Map({}), action) => {
+  let reducer = reducers[action.type];
+  return reducer ? reducer(state, action) : state;
+}

@@ -7,7 +7,7 @@ const other = (state = Map({}), action) => {
     case actionTypes.ACTION2_TYPE:
       return state.set('action', 2);
     default:
-      return state
+      return state;
   }
 
 };
