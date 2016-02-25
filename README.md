@@ -1,4 +1,4 @@
-# React seed
+# React redux seed
 
 ## Installation
 
