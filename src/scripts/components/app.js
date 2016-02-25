@@ -7,8 +7,10 @@ class App extends React.Component {
     return (
       <div>
         <h1>App</h1>
-        <Link to={`/home`}>home</Link><br />
+
+        <Link to={`/home`} activeClassName="active">home</Link><br />
         <Link to={`/about`}>about</Link>
+
         <div>{this.props.children}</div>
       </div>
     );

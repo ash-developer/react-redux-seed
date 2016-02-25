@@ -16,7 +16,8 @@ module.exports = {
     ],
     loaders: [
       {test: /\.less$/, loader: 'style!css!less'},
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel'}
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
+      {test: /\.jpg$/, loader: 'file'}
     ]
   },
   plugins: [

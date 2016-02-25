@@ -14,7 +14,8 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.less$/, loader: ExtractTextPlugin.extract('style', 'css!less')},
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel'}
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
+      {test: /\.jpg$/, loader: 'file'}
     ]
   },
 
