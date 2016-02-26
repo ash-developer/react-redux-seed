@@ -13,14 +13,8 @@ export const action2 = () => {
   }
 };
 
-export const actionAsync = () => {
-
-  return (dispatch) => {
-    dispatch(action1(9));
-
-    setTimeout(() => {
-      dispatch(action1(-1));
-    }, 5000);
-  };
-
+export const timeout = () => {
+  return {
+    type: actionTypes.TIMEOUT_REQUESTED_TYPE
+  }
 };

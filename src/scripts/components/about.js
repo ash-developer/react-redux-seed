@@ -15,7 +15,7 @@ import * as actions from '../actions/common';
 class About extends Component {
 
   handleAction1Click = () => {
-    this.props.actions.actionAsync();
+    this.props.actions.timeout();
   };
 
   render() {
