@@ -37,5 +37,5 @@ Compiled files will be located at ./dist/ folder
  - react - [link](https://facebook.github.io/react/docs/getting-started.html)
  - react-router - [link](https://github.com/reactjs/react-router/tree/master/docs)
  - redux - [link](http://redux.js.org/index.html)
- - react-thunk (async redux actions) - [link](https://github.com/gaearon/redux-thunk)
+ - react-saga (async redux actions) - [link](https://github.com/yelouafi/redux-saga)
  - immutable (provides many immutable data structures) - [link](https://facebook.github.io/immutable-js/docs/#/)
