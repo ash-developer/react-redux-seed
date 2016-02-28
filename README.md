@@ -2,6 +2,12 @@ React redux seed
 ================
 Base project to start developing with react and redux. Project includes pre installed most popular packages for developing with react. 
 
+## Pull repository
+```bash
+git clone git@github.com:ash-developer/react-redux-seed.git ./YOUR-PROJECT-TITLE
+git remote set-url origin https://github.com/YOUR-PROJECT/REPOSITORY.git
+```
+
 ## Requirements
 **node.js and npm**
 
