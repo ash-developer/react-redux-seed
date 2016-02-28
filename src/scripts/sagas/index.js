@@ -7,13 +7,19 @@ function* timeout() {
     type: actionTypes.ACTION1_TYPE, value: 8
   });
 
-  yield call(function* () {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve();
-      }, 5000);
+  try {
+    var q = yield call(() => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve('qwe');
+        }, 1000);
+      });
     });
-  });
+
+    console.log(q);
+  } catch (error) {
+    console.log(error);
+  }
 
   yield put({
     type: actionTypes.ACTION1_TYPE, value: -1
@@ -21,5 +27,5 @@ function* timeout() {
 }
 
 export default function* saga() {
-  yield* takeEvery(actionTypes.TIMEOUT_REQUESTED_TYPE, timeout);
+  yield takeEvery(actionTypes.TIMEOUT_REQUESTED_TYPE, timeout);
 }
