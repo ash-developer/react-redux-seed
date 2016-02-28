@@ -18,7 +18,7 @@ $ npm install
 ```bash
 $ npm start
 ```
-Server will be started on [http://localhost:8080/](http://localhost:8080/). To change it got to ./webpack.config.js file and modify setting `devServer.port`
+Server will be started on [http://localhost:8080/](http://localhost:8080/). To change it got to `./webpack.config.js` file and modify setting `devServer.port`
 
 ### Production build
 ```bash
