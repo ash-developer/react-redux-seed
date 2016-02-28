@@ -1,6 +1,6 @@
 React redux seed
 ================
-Project includes pre installed most popular packages for developing with react. 
+Base project to start developing with react and redux. Project includes pre installed most popular packages for developing with react. 
 
 ## Requirements
 **node.js and npm**
@@ -18,7 +18,7 @@ $ npm install
 ```bash
 $ npm start
 ```
-Server will be started on [http://localhost:8080/](http://localhost:8080/)
+Server will be started on [http://localhost:8080/](http://localhost:8080/). To change it got to ./webpack.config.js file and modify setting `devServer.port`
 
 ### Production build
 ```bash
