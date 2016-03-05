@@ -8,7 +8,8 @@ module.exports = {
   entry: ['babel-polyfill', './src/app.js'],
   output: {
     path: __dirname + '/dist',
-    filename: 'app.js'
+    filename: 'app.js',
+    publicPath: '/'
   },
   module: {
     preLoaders: [
@@ -31,11 +32,12 @@ module.exports = {
       'window.jQuery': 'jquery'
     })
   ],
+  devtool: 'source-map',
   devServer: {
     colors: true,
     historyApiFallback: true,
     inline: true,
     hot: true,
-    port: 8080
+    port: process.env.PORT || 8080
   }
 };
