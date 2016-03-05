@@ -1,6 +1,6 @@
 React redux seed
 ================
-Base project to start developing with react and redux. Project includes pre installed most popular packages for developing with react. 
+Base project to start developing with react and redux. Project includes pre installed most popular packages for developing with react.
 
 ## Pull repository
 ```bash

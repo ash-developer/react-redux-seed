@@ -5,7 +5,7 @@ const other = (state = Map({}), action) => {
 
   switch (action.type) {
     case actionTypes.ACTION2_TYPE:
-      return state.set('action', 2);
+      return state.set('action', new Date());
     default:
       return state;
   }

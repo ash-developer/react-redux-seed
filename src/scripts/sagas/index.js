@@ -8,15 +8,13 @@ function* timeout() {
   });
 
   try {
-    var q = yield call(() => {
+    yield call(() => {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve('qwe');
         }, 1000);
       });
     });
-
-    console.log(q);
   } catch (error) {
     console.log(error);
   }
@@ -27,5 +25,5 @@ function* timeout() {
 }
 
 export default function* saga() {
-  yield takeEvery(actionTypes.TIMEOUT_REQUESTED_TYPE, timeout);
+  yield* takeEvery(actionTypes.TIMEOUT_REQUESTED_TYPE, timeout);
 }

@@ -8,8 +8,8 @@ class App extends Component {
       <div>
         <h1>App</h1>
 
-        <Link to={`/home`} activeClassName="active">home</Link><br />
-        <Link to={`/about`}>about</Link>
+        <Link to={`/page1`} activeClassName="active">page1</Link>&nbsp;
+        <Link to={`/page2`}>page2</Link>
 
         <div>{this.props.children}</div>
       </div>

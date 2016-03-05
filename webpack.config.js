@@ -32,7 +32,6 @@ module.exports = {
       'window.jQuery': 'jquery'
     })
   ],
-  devtool: 'source-map',
   devServer: {
     colors: true,
     historyApiFallback: true,
